@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/justinlettau/ts-util-is.svg?branch=master)](https://travis-ci.org/justinlettau/ts-util-is)
 
-# TS Utility
+# ts-util-is
 TypeScript typeof utility helper with no dependecies. Provides type guards for all common types.
 
 # Installation
