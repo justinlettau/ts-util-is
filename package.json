@@ -1,0 +1,41 @@
+{
+  "name": "ts-util-is",
+  "version": "0.0.1",
+  "description": "TypeScript typeof utility helper with no dependecies.",
+  "keywords": [
+    "typescript",
+    "util",
+    "typeof",
+    "type guards",
+    "isArray",
+    "isBoolean",
+    "isDate",
+    "isDefined",
+    "isError",
+    "isFunction",
+    "isGuid",
+    "isNull",
+    "isNumber",
+    "isObject",
+    "isRegExp",
+    "isString",
+    "isSymbol",
+    "isUndefined",
+    "isThis",
+    "isThat",
+    "polyfill"
+  ],
+  "author": "Justin Lettau",
+  "license": "MIT",
+  "homepage": "https://github.com/justinlettau/ts-util-is",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinlettau/ts-util-is"
+  },
+  "bugs": {
+    "url": "https://github.com/justinlettau/ts-util-is"
+  },
+  "scripts": {
+    "test": "tslint ./src/**/*.ts"
+  }
+}
