@@ -9,23 +9,25 @@ npm install ts-util-is
 ```
 
 # Usage
-Import:
+Import everything:
 ```
-// everything
 import * as util from 'ts-util-is';
 
-// - or -
+let value: string | any[] = 'hey there';
 
-// only what you need
+if (util.isArray(value)) {
+    console.log(value.join(' ')); // no TypeScript error!
+}
+```
+
+Import only what you need:
+```
 import { isArray, isString } from 'ts-util-is';
-```
 
-And use:
-```
-var value: string | any[] = 'hey there';
+let value: string | any[] = 'types are fun';
 
 if (isArray(value)) {
-    value.join(); // no TypeScript error!
+    console.log(value.join(' ')); // no TypeScript error!
 }
 ```
 
