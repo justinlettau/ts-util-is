@@ -1,6 +1,6 @@
 {
   "name": "ts-util-is",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript typeof utility helper with no dependecies.",
   "keywords": [
     "typescript",
