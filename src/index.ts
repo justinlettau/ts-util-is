@@ -4,8 +4,20 @@
  * @param value Reference to check.
  * @returns True if `value` is an `Array`.
  */
-export function isArray(value: any): value is [] {
+export function isArray(value: any): value is any[] {
     return Array.isArray(value);
+}
+
+/**
+ * Determines if a reference is a valid base64 string.
+ *
+ * @param value Reference to check.
+ * @returns True if `value` is a valid base64 string.
+ */
+export function isBase64(value: any): value is string {
+    const base64: RegExp = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
+
+    return isString(value) && base64.test(value);
 }
 
 /**
@@ -26,6 +38,16 @@ export function isBoolean(value: any): value is boolean {
  */
 export function isDate(value: any): value is Date {
     return Object.prototype.toString.call(value) === '[object Date]';
+}
+
+/**
+ * Determines if a reference is a valid `Date`.
+ *
+ * @param value Reference to check.
+ * @returns True if `value` is a valid `Date`.
+ */
+export function isDateValid(value: any): value is Date {
+    return isDate(value) && !isNaN(value.getTime());
 }
 
 /**
@@ -64,10 +86,20 @@ export function isFunction(value: any): value is Function {
  * @param value Reference to check.
  * @returns True if `value` is a valid GUID string.
  */
-export function isGuid(value: string): boolean {
+export function isGuid(value: any): value is string {
     const guid: RegExp = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
-    return value && guid.test(value);
+    return isString(value) && guid.test(value);
+}
+
+/**
+ * Determines if a reference is `Infinity` (positive or negative).
+ *
+ * @param value Reference to check.
+ * @returns True if `value` is `Infinity`.
+ */
+export function isInfinity(value: any): value is number {
+    return value === Infinity || value === -Infinity;
 }
 
 /**
