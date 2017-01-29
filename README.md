@@ -33,12 +33,15 @@ if (isArray(value)) {
 
 # Methods
 - isArray
+- isBase64
 - isBoolean
 - isDate
+- isDateValid
 - isDefined
 - isError
 - isFunction
 - isGuid
+- isInfinity
 - isNull
 - isNumber
 - isObject
