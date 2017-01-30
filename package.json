@@ -39,6 +39,6 @@
     "url": "https://github.com/justinlettau/ts-util-is"
   },
   "scripts": {
-    "test": "tslint ./src/**/*.ts"
+    "test": "tslint index.ts"
   }
 }
