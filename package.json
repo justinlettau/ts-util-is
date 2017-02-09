@@ -42,6 +42,7 @@
     "test": "tslint index.ts"
   },
   "devDependencies": {
-    "tslint": "^4.4.2"
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
   }
 }
