@@ -3,7 +3,7 @@
 [![Dev Dependency Status](https://david-dm.org/justinlettau/ts-util-is/dev-status.svg)](https://david-dm.org/justinlettau/ts-util-isl?type=dev)
 
 # ts-util-is
-TypeScript typeof utility helper with no dependecies. Provides type guards for all common types.
+TypeScript typeof utility helper with no dependencies. Provides type guards for all common types.
 
 # Installation
 ```
