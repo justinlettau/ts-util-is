@@ -40,5 +40,8 @@
   },
   "scripts": {
     "test": "tslint index.ts"
+  },
+  "devDependencies": {
+    "tslint": "^4.4.2"
   }
 }
