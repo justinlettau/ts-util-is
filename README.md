@@ -12,7 +12,7 @@ npm install ts-util-is
 
 # Usage
 Import everything:
-```
+```js
 import * as util from 'ts-util-is';
 
 let value: string | any[] = 'hey there';
@@ -23,7 +23,7 @@ if (util.isArray(value)) {
 ```
 
 Import only what you need:
-```
+```js
 import { isArray, isString } from 'ts-util-is';
 
 let value: string | any[] = 'types are fun';
