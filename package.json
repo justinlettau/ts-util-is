@@ -43,10 +43,11 @@
     "url": "https://github.com/justinlettau/ts-util-is"
   },
   "scripts": {
-    "test": "tslint index.ts"
+    "test": "tslint index.ts -c ./tslint.json"
   },
   "devDependencies": {
-    "tslint": "^4.4.2",
-    "typescript": "^2.1.6"
+    "tslint": "^5.0.0",
+    "tslint-config-unicorn-science": "^1.0.0",
+    "typescript": "^2.2.2"
   }
 }
