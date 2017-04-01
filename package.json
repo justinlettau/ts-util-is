@@ -28,7 +28,11 @@
     "isThat",
     "polyfill"
   ],
-  "author": "Justin Lettau",
+  "author": {
+    "name": "Justin Lettau",
+    "email": "me@justinlettau.com",
+    "url": "http://justinlettau.com"
+  },
   "license": "MIT",
   "homepage": "https://github.com/justinlettau/ts-util-is",
   "repository": {
