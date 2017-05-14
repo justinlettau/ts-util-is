@@ -1,7 +1,7 @@
 {
   "name": "ts-util-is",
-  "version": "0.1.2",
-  "description": "TypeScript typeof utility helper with no dependecies.",
+  "version": "1.0.0",
+  "description": "TypeScript typeof utility helper with no dependencies.",
   "keywords": [
     "typescript",
     "util",
@@ -46,8 +46,8 @@
     "test": "tslint index.ts -c ./tslint.json"
   },
   "devDependencies": {
-    "tslint": "^5.0.0",
+    "tslint": "^5.2.0",
     "tslint-config-unicorn-science": "^1.0.0",
-    "typescript": "^2.2.2"
+    "typescript": "^2.3.2"
   }
 }

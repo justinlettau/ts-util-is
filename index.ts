@@ -2,7 +2,6 @@
  * Determines if a reference is an `Array`.
  *
  * @param value Reference to check.
- * @returns True if `value` is an `Array`.
  */
 export function isArray(value: any): value is any[] {
     return Array.isArray(value);
@@ -12,7 +11,6 @@ export function isArray(value: any): value is any[] {
  * Determines if a reference is a valid base64 string.
  *
  * @param value Reference to check.
- * @returns True if `value` is a valid base64 string.
  */
 export function isBase64(value: any): value is string {
     const base64: RegExp = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
@@ -24,7 +22,6 @@ export function isBase64(value: any): value is string {
  * Determines if a reference is a `Boolean`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `Boolean`.
  */
 export function isBoolean(value: any): value is boolean {
     return typeof value === 'boolean';
@@ -34,7 +31,6 @@ export function isBoolean(value: any): value is boolean {
  * Determines if a reference is a `Date`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `Date`.
  */
 export function isDate(value: any): value is Date {
     return Object.prototype.toString.call(value) === '[object Date]';
@@ -44,7 +40,6 @@ export function isDate(value: any): value is Date {
  * Determines if a reference is a valid `Date`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a valid `Date`.
  */
 export function isDateValid(value: any): value is Date {
     return isDate(value) && !isNaN(value.getTime());
@@ -54,7 +49,6 @@ export function isDateValid(value: any): value is Date {
  * Determines if a reference is defined.
  *
  * @param value Reference to check.
- * @returns True if `value` is defined.
  */
 export function isDefined(value: any): boolean {
     return typeof value !== 'undefined';
@@ -64,7 +58,6 @@ export function isDefined(value: any): boolean {
  * Determines if a reference is an `Error`.
  *
  * @param value Reference to check.
- * @returns True if `value` is an `Error`.
  */
 export function isError(value: any): value is Error {
     return Object.prototype.toString.call(value) === '[object Error]' || value instanceof Error;
@@ -74,7 +67,6 @@ export function isError(value: any): value is Error {
  * Determines if a reference is a `Function`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `Function`.
  */
 export function isFunction(value: any): value is Function {
     return typeof value === 'function';
@@ -84,7 +76,6 @@ export function isFunction(value: any): value is Function {
  * Determines if a reference is a valid GUID string.
  *
  * @param value Reference to check.
- * @returns True if `value` is a valid GUID string.
  */
 export function isGuid(value: any): value is string {
     const guid: RegExp = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -96,7 +87,6 @@ export function isGuid(value: any): value is string {
  * Determines if a reference is `Infinity` (positive or negative).
  *
  * @param value Reference to check.
- * @returns True if `value` is `Infinity`.
  */
 export function isInfinity(value: any): value is number {
     return value === Infinity || value === -Infinity;
@@ -106,7 +96,6 @@ export function isInfinity(value: any): value is number {
  * Determines if a reference is `null`.
  *
  * @param value Reference to check.
- * @returns True if `value` is `null`.
  */
 export function isNull(value: any): value is null {
     return value === null;
@@ -116,7 +105,6 @@ export function isNull(value: any): value is null {
  * Determines if a reference is a `Number`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `Number`.
  */
 export function isNumber(value: any): value is number {
     return typeof value === 'number';
@@ -126,9 +114,8 @@ export function isNumber(value: any): value is number {
  * Determines if a reference is an 'Object'.
  *
  * @param value Reference to check.
- * @returns True if `value` is an `Object`.
  */
-export function isObject(value: any): value is {} {
+export function isObject(value: any): value is Object {
     return typeof value === 'object';
 }
 
@@ -136,7 +123,6 @@ export function isObject(value: any): value is {} {
  * Determines if a reference is a `RegExp`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `RegExp`.
  */
 export function isRegExp(value: any): value is RegExp {
     return Object.prototype.toString.call(value) === '[object RegExp]';
@@ -146,7 +132,6 @@ export function isRegExp(value: any): value is RegExp {
  * Determines if a reference is a `String`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `String`.
  */
 export function isString(value: any): value is string {
     return typeof value === 'string';
@@ -156,7 +141,6 @@ export function isString(value: any): value is string {
  * Determines if a reference is a `Symbol`.
  *
  * @param value Reference to check.
- * @returns True if `value` is a `Symbol`.
  */
 export function isSymbol(value: any): value is symbol {
     return typeof value === 'symbol';
@@ -166,7 +150,6 @@ export function isSymbol(value: any): value is symbol {
  * Determines if a reference is `undefined`.
  *
  * @param value Reference to check.
- * @returns True if `value` is `undefined`.
  */
 export function isUndefined(value: any): value is undefined {
     return typeof value === 'undefined';
