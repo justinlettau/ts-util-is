@@ -62,9 +62,9 @@ describe('ts-util-is methods', () => {
         expect(util.isString('')).toEqual(true);
     });
 
-    // it('ensure value is a symbol', () => {
-    //     expect(util.isSymbol(Symbol())).toEqual(true);
-    // });
+    it('ensure value is a symbol', () => {
+        expect(util.isSymbol(Symbol())).toEqual(true);
+    });
 
     it('ensure value is undefined', () => {
         expect(util.isUndefined(undefined)).toEqual(true);
