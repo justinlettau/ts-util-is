@@ -120,6 +120,17 @@ function isObject(value) {
 }
 exports.isObject = isObject;
 /**
+ * Determines if a reference is a plain `Object`. A "plain" object is typically created by `{}` or
+ * `new Object()`. Some types such as arrays and null, while technically objects, are not considered
+ * plain objects.
+ *
+ * @param value Reference to check.
+ */
+function isPlainObject(value) {
+    return isObject(value) && Object.prototype.toString.call(value) === '[object Object]';
+}
+exports.isPlainObject = isPlainObject;
+/**
  * Determines if a reference is a `RegExp`.
  *
  * @param value Reference to check.

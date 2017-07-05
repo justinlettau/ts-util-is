@@ -54,6 +54,14 @@ describe('ts-util-is methods', () => {
         expect(util.isObject({})).toEqual(true);
     });
 
+    it('ensure value is a plain object', () => {
+        expect(util.isPlainObject({})).toEqual(true);
+    });
+
+    it('ensure value is not a plain object', () => {
+        expect(util.isPlainObject([])).toEqual(false);
+    });
+
     it('ensure value is a regex', () => {
         expect(util.isRegExp(/83/)).toEqual(true);
     });
