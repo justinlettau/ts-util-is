@@ -68,6 +68,7 @@ export function isError(value: any): value is Error {
  *
  * @param value Reference to check.
  */
+// tslint:disable-next-line:ban-types
 export function isFunction(value: any): value is Function {
     return typeof value === 'function';
 }
@@ -115,7 +116,7 @@ export function isNumber(value: any): value is number {
  *
  * @param value Reference to check.
  */
-export function isObject(value: any): value is Object {
+export function isObject(value: any): value is object {
     return typeof value === 'object';
 }
 
@@ -126,7 +127,7 @@ export function isObject(value: any): value is Object {
  *
  * @param value Reference to check.
  */
-export function isPlainObject(value: any): value is Object {
+export function isPlainObject(value: any): value is object {
     return isObject(value) && Object.prototype.toString.call(value) === '[object Object]';
 }
 
