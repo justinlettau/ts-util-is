@@ -69,6 +69,7 @@ exports.isError = isError;
  *
  * @param value Reference to check.
  */
+// tslint:disable-next-line:ban-types
 function isFunction(value) {
     return typeof value === 'function';
 }

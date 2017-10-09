@@ -75,7 +75,7 @@ export declare function isNumber(value: any): value is number;
  *
  * @param value Reference to check.
  */
-export declare function isObject(value: any): value is Object;
+export declare function isObject(value: any): value is object;
 /**
  * Determines if a reference is a plain `Object`. A "plain" object is typically created by `{}` or
  * `new Object()`. Some types such as arrays and null, while technically objects, are not considered
@@ -83,7 +83,7 @@ export declare function isObject(value: any): value is Object;
  *
  * @param value Reference to check.
  */
-export declare function isPlainObject(value: any): value is Object;
+export declare function isPlainObject(value: any): value is object;
 /**
  * Determines if a reference is a `RegExp`.
  *
