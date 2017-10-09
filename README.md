@@ -15,10 +15,10 @@ Import everything:
 ```js
 import * as util from 'ts-util-is';
 
-let value: string | any[] = 'hey there';
+const value: string | string[] = 'hey there';
 
 if (util.isArray(value)) {
-    console.log(value.join(' ')); // `value` is array type
+    console.log(value.split(' ')); // `value` is array type
 }
 ```
 
@@ -26,10 +26,10 @@ Import only what you need:
 ```js
 import { isArray, isString } from 'ts-util-is';
 
-let value: string | any[] = 'types are fun';
+const value: string | string[] = 'hello again';
 
 if (isArray(value)) {
-    console.log(value.join(' ')); // `value` is array type
+    console.log(value.split(' ')); // `value` is array type
 }
 ```
 
