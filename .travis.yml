@@ -3,7 +3,7 @@ node_js:
   - "node"
 
 before_install:
-    - npm install typescript tslint -g
+  - npm install typescript tslint -g
 
 script:
-    - npm run test
+  - npm run test

@@ -4,7 +4,7 @@
  * @param value Reference to check.
  */
 export function isArray(value: any): value is any[] {
-    return Array.isArray(value);
+  return Array.isArray(value);
 }
 
 /**
@@ -13,9 +13,9 @@ export function isArray(value: any): value is any[] {
  * @param value Reference to check.
  */
 export function isBase64(value: any): value is string {
-    const base64: RegExp = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
+  const base64: RegExp = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
 
-    return isString(value) && base64.test(value);
+  return isString(value) && base64.test(value);
 }
 
 /**
@@ -24,7 +24,7 @@ export function isBase64(value: any): value is string {
  * @param value Reference to check.
  */
 export function isBoolean(value: any): value is boolean {
-    return typeof value === 'boolean';
+  return typeof value === 'boolean';
 }
 
 /**
@@ -33,7 +33,7 @@ export function isBoolean(value: any): value is boolean {
  * @param value Reference to check.
  */
 export function isDate(value: any): value is Date {
-    return Object.prototype.toString.call(value) === '[object Date]';
+  return Object.prototype.toString.call(value) === '[object Date]';
 }
 
 /**
@@ -42,7 +42,7 @@ export function isDate(value: any): value is Date {
  * @param value Reference to check.
  */
 export function isDateValid(value: any): value is Date {
-    return isDate(value) && !isNaN(value.getTime());
+  return isDate(value) && !isNaN(value.getTime());
 }
 
 /**
@@ -51,7 +51,7 @@ export function isDateValid(value: any): value is Date {
  * @param value Reference to check.
  */
 export function isDefined(value: any): boolean {
-    return typeof value !== 'undefined';
+  return typeof value !== 'undefined';
 }
 
 /**
@@ -60,7 +60,7 @@ export function isDefined(value: any): boolean {
  * @param value Reference to check.
  */
 export function isError(value: any): value is Error {
-    return Object.prototype.toString.call(value) === '[object Error]' || value instanceof Error;
+  return Object.prototype.toString.call(value) === '[object Error]' || value instanceof Error;
 }
 
 /**
@@ -70,7 +70,7 @@ export function isError(value: any): value is Error {
  */
 // tslint:disable-next-line:ban-types
 export function isFunction(value: any): value is Function {
-    return typeof value === 'function';
+  return typeof value === 'function';
 }
 
 /**
@@ -79,9 +79,9 @@ export function isFunction(value: any): value is Function {
  * @param value Reference to check.
  */
 export function isGuid(value: any): value is string {
-    const guid: RegExp = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  const guid: RegExp = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
-    return isString(value) && guid.test(value);
+  return isString(value) && guid.test(value);
 }
 
 /**
@@ -90,7 +90,7 @@ export function isGuid(value: any): value is string {
  * @param value Reference to check.
  */
 export function isInfinity(value: any): value is number {
-    return value === Infinity || value === -Infinity;
+  return value === Infinity || value === -Infinity;
 }
 
 /**
@@ -99,7 +99,7 @@ export function isInfinity(value: any): value is number {
  * @param value Reference to check.
  */
 export function isNull(value: any): value is null {
-    return value === null;
+  return value === null;
 }
 
 /**
@@ -108,7 +108,7 @@ export function isNull(value: any): value is null {
  * @param value Reference to check.
  */
 export function isNumber(value: any): value is number {
-    return typeof value === 'number';
+  return typeof value === 'number';
 }
 
 /**
@@ -117,7 +117,7 @@ export function isNumber(value: any): value is number {
  * @param value Reference to check.
  */
 export function isObject(value: any): value is object {
-    return typeof value === 'object';
+  return typeof value === 'object';
 }
 
 /**
@@ -128,7 +128,7 @@ export function isObject(value: any): value is object {
  * @param value Reference to check.
  */
 export function isPlainObject(value: any): value is object {
-    return isObject(value) && Object.prototype.toString.call(value) === '[object Object]';
+  return isObject(value) && Object.prototype.toString.call(value) === '[object Object]';
 }
 
 /**
@@ -137,7 +137,7 @@ export function isPlainObject(value: any): value is object {
  * @param value Reference to check.
  */
 export function isRegExp(value: any): value is RegExp {
-    return Object.prototype.toString.call(value) === '[object RegExp]';
+  return Object.prototype.toString.call(value) === '[object RegExp]';
 }
 
 /**
@@ -146,7 +146,7 @@ export function isRegExp(value: any): value is RegExp {
  * @param value Reference to check.
  */
 export function isString(value: any): value is string {
-    return typeof value === 'string';
+  return typeof value === 'string';
 }
 
 /**
@@ -155,7 +155,7 @@ export function isString(value: any): value is string {
  * @param value Reference to check.
  */
 export function isSymbol(value: any): value is symbol {
-    return typeof value === 'symbol';
+  return typeof value === 'symbol';
 }
 
 /**
@@ -164,5 +164,5 @@ export function isSymbol(value: any): value is symbol {
  * @param value Reference to check.
  */
 export function isUndefined(value: any): value is undefined {
-    return typeof value === 'undefined';
+  return typeof value === 'undefined';
 }
