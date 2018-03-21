@@ -51,11 +51,14 @@
     "build": "tsc -p ./tsconfig.json",
     "lint": "tslint -c ./tslint.json -p ./tsconfig.json",
     "release": "standard-version",
-    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
+    "test": "nyc jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "posttest": "nyc report --reporter=json && codecov -f coverage/*.json"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
+    "codecov": "^3.0.0",
     "jasmine": "^2.99.0",
+    "nyc": "^11.6.0",
     "standard-version": "^4.3.0",
     "ts-node": "^3.3.0",
     "tslint": "^5.9.1",
