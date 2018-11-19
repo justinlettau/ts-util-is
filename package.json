@@ -55,7 +55,7 @@
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.8.6",
+    "@types/jasmine": "^3.0.0",
     "codecov": "^3.0.0",
     "jasmine": "^3.0.0",
     "nyc": "^13.0.0",
