@@ -166,3 +166,22 @@ export function isSymbol(value: any): value is symbol {
 export function isUndefined(value: any): value is undefined {
   return typeof value === 'undefined';
 }
+
+/**
+ * Determines if a reference is null or undefined.
+ *
+ * @param value Reference to check
+ */
+export function isNullish(value: any): value is null | undefined {
+  return value === null || value === undefined;
+}
+
+/**
+ * Determines if a reference is an instance of `type`.
+ *
+ * @param value Reference to check
+ * @param ctor Constructor type to check against
+ */
+export function isInstance<T extends new (...args: any[]) => any>(value: any, ctor: T): value is InstanceType<T> {
+  return value instanceof ctor;
+}
