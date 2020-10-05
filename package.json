@@ -55,13 +55,13 @@
     "posttest": "nyc report --reporter=json && codecov -f coverage/*.json"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.0.0",
-    "codecov": "^3.0.0",
-    "jasmine": "^3.0.0",
-    "nyc": "^15.0.0",
-    "standard-version": "^7.0.0",
-    "ts-node": "^8.0.0",
-    "tslint": "^5.9.1",
+    "@types/jasmine": "^3.5.14",
+    "codecov": "^3.7.2",
+    "jasmine": "^3.6.1",
+    "nyc": "^15.1.0",
+    "standard-version": "^9.0.0",
+    "ts-node": "^9.0.0",
+    "tslint": "^6.1.3",
     "tslint-config-unicorn-science": "^1.3.0",
     "typescript": "^3.0.0"
   }
