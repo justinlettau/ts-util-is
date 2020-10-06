@@ -79,10 +79,10 @@ describe('ts-util-is methods', () => {
   });
 
   it('ensure value is null or undefined', () => {
-    expect(util.isNullish(null)).toEqual(true);
-    expect(util.isNullish(undefined)).toEqual(true);
-    expect(util.isNullish(false)).toEqual(false);
-    expect(util.isNullish(1)).toEqual(false);
+    expect(util.isNil(null)).toEqual(true);
+    expect(util.isNil(undefined)).toEqual(true);
+    expect(util.isNil(false)).toEqual(false);
+    expect(util.isNil(1)).toEqual(false);
   });
 
   it('ensure value is an instance of a type', () => {

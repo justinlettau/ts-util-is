@@ -172,7 +172,7 @@ export function isUndefined(value: any): value is undefined {
  *
  * @param value Reference to check
  */
-export function isNullish(value: any): value is null | undefined {
+export function isNil(value: any): value is null | undefined {
   return value === null || value === undefined;
 }
 
