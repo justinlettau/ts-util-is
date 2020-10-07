@@ -46,6 +46,7 @@ if (isArray(value)) {
 - `isGuid()`
 - `isInfinity()`
 - `isNull()`
+- `isNil()`
 - `isNumber()`
 - `isObject()`
 - `isPlainObject()`
@@ -53,3 +54,4 @@ if (isArray(value)) {
 - `isString()`
 - `isSymbol()`
 - `isUndefined()`
+- `isInstance()`
