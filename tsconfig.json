@@ -8,7 +8,5 @@
     "sourceMap": true,
     "target": "es5"
   },
-  "include": [
-    "index.ts"
-  ]
+  "include": ["index.ts"]
 }

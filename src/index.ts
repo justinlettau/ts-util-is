@@ -13,7 +13,7 @@ export function isArray(value: any): value is any[] {
  * @param value Reference to check.
  */
 export function isBase64(value: any): value is string {
-  const base64: RegExp = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
+  const base64 = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$/;
 
   return isString(value) && base64.test(value);
 }
@@ -60,7 +60,10 @@ export function isDefined(value: any): boolean {
  * @param value Reference to check.
  */
 export function isError(value: any): value is Error {
-  return Object.prototype.toString.call(value) === '[object Error]' || value instanceof Error;
+  return (
+    Object.prototype.toString.call(value) === '[object Error]' ||
+    value instanceof Error
+  );
 }
 
 /**
@@ -79,7 +82,7 @@ export function isFunction(value: any): value is Function {
  * @param value Reference to check.
  */
 export function isGuid(value: any): value is string {
-  const guid: RegExp = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+  const guid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
   return isString(value) && guid.test(value);
 }
@@ -128,7 +131,10 @@ export function isObject(value: any): value is object {
  * @param value Reference to check.
  */
 export function isPlainObject(value: any): value is object {
-  return isObject(value) && Object.prototype.toString.call(value) === '[object Object]';
+  return (
+    isObject(value) &&
+    Object.prototype.toString.call(value) === '[object Object]'
+  );
 }
 
 /**
@@ -182,6 +188,9 @@ export function isNil(value: any): value is null | undefined {
  * @param value Reference to check
  * @param ctor Constructor type to check against
  */
-export function isInstance<T extends new (...args: any[]) => any>(value: any, ctor: T): value is InstanceType<T> {
+export function isInstance<T extends new (...args: any[]) => any>(
+  value: any,
+  ctor: T
+): value is InstanceType<T> {
   return value instanceof ctor;
 }

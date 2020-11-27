@@ -1,7 +1,6 @@
 import * as util from './index';
 
 describe('ts-util-is methods', () => {
-
   it('ensure value is an array', () => {
     expect(util.isArray([])).toEqual(true);
   });
@@ -31,7 +30,9 @@ describe('ts-util-is methods', () => {
   });
 
   it('ensure value is a function', () => {
-    expect(util.isFunction(function () {})).toEqual(true);
+    expect(util.isFunction(function () {
+      // empty
+    })).toEqual(true);
   });
 
   it('ensure value is a guid', () => {
@@ -95,5 +96,4 @@ describe('ts-util-is methods', () => {
     expect(util.isInstance(null, Error)).toEqual(false);
     expect(util.isInstance(false, Error)).toEqual(false);
   });
-
 });
