@@ -52,6 +52,7 @@
     "lint": "eslint . --ext .js,.ts",
     "test": "jest",
     "release": "standard-version",
+    "prepublishOnly": "npm run build",
     "format": "prettier --write ."
   },
   "husky": {
