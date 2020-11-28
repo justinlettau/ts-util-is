@@ -1,5 +1,5 @@
 [![NPM Version](https://badge.fury.io/js/ts-util-is.svg)](https://badge.fury.io/js/ts-util-is)
-[![Build Status](https://travis-ci.org/justinlettau/ts-util-is.svg?branch=master)](https://travis-ci.org/justinlettau/ts-util-is)
+[![CI](https://github.com/justinlettau/ts-util-is/workflows/CI/badge.svg)](https://github.com/justinlettau/ts-util-is/actions)
 [![Dev Dependency Status](https://david-dm.org/justinlettau/ts-util-is/dev-status.svg)](https://david-dm.org/justinlettau/ts-util-is?type=dev)
 [![codecov](https://codecov.io/gh/justinlettau/ts-util-is/branch/master/graph/badge.svg)](https://codecov.io/gh/justinlettau/ts-util-is)
 
