@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/justinlettau/ts-util-is/compare/v1.2.0...v1.2.1) (2020-11-28)
+
+
+### Bug Fixes
+
+* publish script ([3043e1b](https://github.com/justinlettau/ts-util-is/commit/3043e1b91378f2f518e53ba1b7c5117657acb17d))
+
 ## [1.2.0](https://github.com/justinlettau/ts-util-is/compare/v1.1.3...v1.2.0) (2020-11-28)
 
 
