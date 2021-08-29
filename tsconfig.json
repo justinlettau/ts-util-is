@@ -2,11 +2,11 @@
   "compilerOptions": {
     "declaration": true,
     "lib": ["es6"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "outDir": "dist",
     "sourceMap": true,
-    "target": "es5"
+    "target": "es6"
   },
   "include": ["index.ts"]
 }
