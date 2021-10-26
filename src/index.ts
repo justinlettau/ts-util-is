@@ -3,7 +3,7 @@
  *
  * @param value Reference to check.
  */
-export function isArray(value: any): value is any[] {
+export function isArray(value: any): value is any[] | readonly any[] {
   return Array.isArray(value);
 }
 
