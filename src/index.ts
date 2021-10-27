@@ -3,7 +3,7 @@
  *
  * @param value Reference to check.
  */
-export function isArray(value: any): value is any[] {
+export function isArray<T = unknown>(value: any): value is T[] {
   return Array.isArray(value);
 }
 
