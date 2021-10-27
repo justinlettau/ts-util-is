@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/justinlettau/ts-util-is/compare/v1.3.1...v2.0.0) (2021-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* This package is now pure ESM
+
+### Features
+
+* esm package ([0d6d0d3](https://github.com/justinlettau/ts-util-is/commit/0d6d0d3e1b95f096670977a19b16d03b6921df36))
+* isArray generic ([143bb18](https://github.com/justinlettau/ts-util-is/commit/143bb18daa765ad5141cb864f5651afc406f0f69))
+
 ### [1.3.1](https://github.com/justinlettau/ts-util-is/compare/v1.3.0...v1.3.1) (2021-08-31)
 
 ## [1.3.0](https://github.com/justinlettau/ts-util-is/compare/v1.2.1...v1.3.0) (2021-08-29)
