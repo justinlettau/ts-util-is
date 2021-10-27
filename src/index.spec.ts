@@ -30,9 +30,11 @@ describe('ts-util-is methods', () => {
   });
 
   it('ensure value is a function', () => {
-    expect(util.isFunction(function () {
-      // empty
-    })).toEqual(true);
+    expect(
+      util.isFunction(function () {
+        // empty
+      })
+    ).toEqual(true);
   });
 
   it('ensure value is a guid', () => {
