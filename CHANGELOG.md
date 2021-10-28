@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/justinlettau/ts-util-is/compare/v2.0.0...v2.0.1) (2021-10-28)
+
+
+### Bug Fixes
+
+* module output ([50f321d](https://github.com/justinlettau/ts-util-is/commit/50f321d21f785bacc64da91427fcb3c78c869803))
+
 ## [2.0.0](https://github.com/justinlettau/ts-util-is/compare/v1.3.1...v2.0.0) (2021-10-27)
 
 
