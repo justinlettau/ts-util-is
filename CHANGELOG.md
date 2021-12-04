@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/justinlettau/ts-util-is/compare/v2.0.1...v2.0.2) (2021-12-04)
+
+
+### Bug Fixes
+
+* support readonly arrays ([8ea1e86](https://github.com/justinlettau/ts-util-is/commit/8ea1e86fd0fc696b6347252da0dacf2e27cd20b4)), closes [#43](https://github.com/justinlettau/ts-util-is/issues/43)
+
 ### [2.0.1](https://github.com/justinlettau/ts-util-is/compare/v2.0.0...v2.0.1) (2021-10-28)
 
 
