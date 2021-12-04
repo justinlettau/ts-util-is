@@ -1,6 +1,5 @@
 [![NPM Version](https://badge.fury.io/js/ts-util-is.svg)](https://badge.fury.io/js/ts-util-is)
 [![CI](https://github.com/justinlettau/ts-util-is/workflows/CI/badge.svg)](https://github.com/justinlettau/ts-util-is/actions)
-[![Dev Dependency Status](https://david-dm.org/justinlettau/ts-util-is/dev-status.svg)](https://david-dm.org/justinlettau/ts-util-is?type=dev)
 [![codecov](https://codecov.io/gh/justinlettau/ts-util-is/branch/master/graph/badge.svg)](https://codecov.io/gh/justinlettau/ts-util-is)
 
 # ts-util-is
@@ -23,7 +22,7 @@ import * as util from 'ts-util-is';
 const value: string | string[] = 'hey there';
 
 if (util.isArray(value)) {
-  console.log(value.split(' ')); // `value` is array type
+  console.log(value.split(' ')); // `value` is string[]
 }
 ```
 
@@ -35,7 +34,7 @@ import { isArray, isString } from 'ts-util-is';
 const value: string | string[] = 'hello again';
 
 if (isArray(value)) {
-  console.log(value.split(' ')); // `value` is array type
+  console.log(value.split(' ')); // `value` is string
 }
 ```
 
