@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/justinlettau/ts-util-is/compare/v2.0.2...v2.1.0) (2024-05-07)
+
+
+### Features
+
+* Add `isNegativeNumber`, `isPositiveNumber`, and `isNonZeroNumber` ([#67](https://github.com/justinlettau/ts-util-is/issues/67)) ([3133ab8](https://github.com/justinlettau/ts-util-is/commit/3133ab86bb3def75e7ef6e73c576cf34095076b3))
+* add `isNonEmptyString` ([#66](https://github.com/justinlettau/ts-util-is/issues/66)) ([59fa707](https://github.com/justinlettau/ts-util-is/commit/59fa7078f54b5868673adb87364e0cfa8bcd6678))
+
 ## [2.0.2](https://github.com/justinlettau/ts-util-is/compare/v2.0.1...v2.0.2) (2023-06-26)
 
 
