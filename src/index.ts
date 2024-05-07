@@ -185,6 +185,15 @@ export function isString(value: any): value is string {
 }
 
 /**
+ * Determines if a reference is a `String` and not the empty string.
+ *
+ * @param value Reference to check
+ */
+export function isNonEmptyString(value: unknown): value is string {
+  return isString(value) && !!value;
+}
+
+/**
  * Determines if a reference is a `Symbol`.
  *
  * @param value Reference to check.
