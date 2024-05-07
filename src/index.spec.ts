@@ -53,6 +53,24 @@ describe('ts-util-is methods', () => {
     expect(util.isNumber(83)).toEqual(true);
   });
 
+  it('ensure value is a non-zero number', () => {
+    expect(util.isNonZeroNumber(-1)).toEqual(true);
+    expect(util.isNonZeroNumber(0)).toEqual(false);
+    expect(util.isNonZeroNumber(1)).toEqual(true);
+  });
+
+  it('ensure value is a positive number', () => {
+    expect(util.isPositiveNumber(-1)).toEqual(false);
+    expect(util.isPositiveNumber(0)).toEqual(false);
+    expect(util.isPositiveNumber(1)).toEqual(true);
+  });
+
+  it('ensure value is a negative number', () => {
+    expect(util.isNegativeNumber(1)).toEqual(false);
+    expect(util.isNegativeNumber(0)).toEqual(false);
+    expect(util.isNegativeNumber(-1)).toEqual(true);
+  });
+
   it('ensure value is an object', () => {
     expect(util.isObject({})).toEqual(true);
   });

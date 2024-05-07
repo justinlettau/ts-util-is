@@ -117,6 +117,33 @@ export function isNumber(value: any): value is number {
 }
 
 /**
+ * Determines if a reference is a non-zero `Number`.
+ *
+ * @param value Reference to check.
+ */
+export function isNonZeroNumber(value: unknown): value is number {
+  return typeof value === 'number' && !!value;
+}
+
+/**
+ * Determines if a reference is a positive `Number`.
+ *
+ * @param value Reference to check.
+ */
+export function isPositiveNumber(value: unknown): value is number {
+  return typeof value === 'number' && value > 0;
+}
+
+/**
+ * Determines if a reference is a negative `Number`.
+ *
+ * @param value Reference to check.
+ */
+export function isNegativeNumber(value: unknown): value is number {
+  return typeof value === 'number' && value < 0;
+}
+
+/**
  * Determines if a reference is an 'Object'.
  *
  * @param value Reference to check.
