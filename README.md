@@ -50,11 +50,15 @@ if (isArray(value)) {
 - `isFunction()`
 - `isGuid()`
 - `isInfinity()`
+- `isNegativeNumber()`
 - `isNull()`
 - `isNil()`
+- `isNonEmptyString()`
+- `isNonZeroNumber()`
 - `isNumber()`
 - `isObject()`
 - `isPlainObject()`
+- `isPositiveNumber()`
 - `isRegExp()`
 - `isString()`
 - `isSymbol()`

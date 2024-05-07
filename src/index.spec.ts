@@ -73,6 +73,11 @@ describe('ts-util-is methods', () => {
     expect(util.isString('')).toEqual(true);
   });
 
+  it('ensure value is a non empty string', () => {
+    expect(util.isNonEmptyString('')).toBe(false);
+    expect(util.isNonEmptyString('something')).toBe(true);
+  });
+
   it('ensure value is a symbol', () => {
     expect(util.isSymbol(Symbol())).toEqual(true);
   });
